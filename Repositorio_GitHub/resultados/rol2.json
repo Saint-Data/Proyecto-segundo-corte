@@ -1,0 +1,307 @@
+{
+  "K_elegido": 4,
+  "K_codo_kneedle": 5,
+  "curva_K": {
+    "K": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "inercia": [
+      545897.2339,
+      284024.1764,
+      188168.7971,
+      124138.5949,
+      98269.573,
+      84566.1584,
+      73120.1377,
+      63403.7817,
+      55861.4485,
+      49496.3457,
+      44627.9378,
+      41223.9561,
+      37668.229,
+      34908.9785
+    ],
+    "silueta": [
+      0.8083,
+      0.4582,
+      0.4915,
+      0.4467,
+      0.4017,
+      0.3999,
+      0.3957,
+      0.4108,
+      0.3823,
+      0.3943,
+      0.4049,
+      0.4041,
+      0.411,
+      0.4116
+    ],
+    "davies_bouldin": [
+      0.1777,
+      0.5954,
+      0.504,
+      0.5632,
+      0.6504,
+      0.6868,
+      0.7257,
+      0.6911,
+      0.7236,
+      0.7231,
+      0.7012,
+      0.7127,
+      0.7258,
+      0.6767
+    ]
+  },
+  "comparacion": [
+    {
+      "Método": "K-means (K=4)",
+      "clusters": 4,
+      "silueta ↑": 0.4915,
+      "Davies-Bouldin ↓": 0.504,
+      "Calinski-Harabasz ↑": 68826.6112
+    },
+    {
+      "Método": "Jerárquico Ward (K=4)",
+      "clusters": 4,
+      "silueta ↑": 0.4831,
+      "Davies-Bouldin ↓": 0.4809,
+      "Calinski-Harabasz ↑": 6967.3817
+    },
+    {
+      "Método": "DBSCAN (ε=490 m)",
+      "clusters": 8,
+      "silueta ↑": 0.1372,
+      "Davies-Bouldin ↓": 0.502,
+      "Calinski-Harabasz ↑": 11201.2505
+    }
+  ],
+  "jerarquico_enlaces": [
+    {
+      "enlace": "ward",
+      "silueta": 0.4831,
+      "davies_bouldin": 0.4809,
+      "calinski_harabasz": 6967.3817,
+      "ARI vs K-means": 0.8216
+    },
+    {
+      "enlace": "complete",
+      "silueta": 0.2913,
+      "davies_bouldin": 0.5769,
+      "calinski_harabasz": 2353.1134,
+      "ARI vs K-means": 0.0645
+    },
+    {
+      "enlace": "average",
+      "silueta": 0.6831,
+      "davies_bouldin": 0.2038,
+      "calinski_harabasz": 1506.5132,
+      "ARI vs K-means": 0.0788
+    },
+    {
+      "enlace": "single",
+      "silueta": 0.6975,
+      "davies_bouldin": 0.2964,
+      "calinski_harabasz": 1496.7421,
+      "ARI vs K-means": 0.0776
+    }
+  ],
+  "ARI_km_ward": 0.8215737438283106,
+  "ARI_km_dbscan": 0.1549839721896625,
+  "dbscan_eps_m": 490.0,
+  "dbscan_min_samples": 50,
+  "dbscan_clusters": 8,
+  "dbscan_pct_ruido": 1.8800000000000001,
+  "perfil_kmeans": [
+    {
+      "km": 0,
+      "viajes": 25467,
+      "lat": 40.77,
+      "lon": -73.971,
+      "dist_mediana_km": 1.96,
+      "dur_mediana_min": 10.133,
+      "vel_media_kmh": 14.057,
+      "pct_fds": 0.258,
+      "zona_grid_principal": "Z03 Upper East Side Sur",
+      "% viajes": 50.934
+    },
+    {
+      "km": 1,
+      "viajes": 21878,
+      "lat": 40.734,
+      "lon": -73.993,
+      "dist_mediana_km": 2.084,
+      "dur_mediana_min": 11.2,
+      "vel_media_kmh": 13.78,
+      "pct_fds": 0.318,
+      "zona_grid_principal": "Z01 Chelsea/Flatiron",
+      "% viajes": 43.756
+    },
+    {
+      "km": 2,
+      "viajes": 1599,
+      "lat": 40.77,
+      "lon": -73.874,
+      "dist_mediana_km": 9.284,
+      "dur_mediana_min": 25.05,
+      "vel_media_kmh": 21.039,
+      "pct_fds": 0.236,
+      "zona_grid_principal": "Z12 Aeropuerto LaGuardia",
+      "% viajes": 3.198
+    },
+    {
+      "km": 3,
+      "viajes": 1056,
+      "lat": 40.646,
+      "lon": -73.785,
+      "dist_mediana_km": 19.616,
+      "dur_mediana_min": 38.958,
+      "vel_media_kmh": 28.47,
+      "pct_fds": 0.268,
+      "zona_grid_principal": "Z15 Aeropuerto JFK",
+      "% viajes": 2.112
+    }
+  ],
+  "perfil_dbscan": [
+    {
+      "db": -1,
+      "viajes": 940,
+      "lat": 40.737,
+      "lon": -73.928,
+      "dist_mediana_km": 3.285,
+      "dur_mediana_min": 12.158,
+      "zona_grid_principal": "Otras",
+      "% viajes": 1.88
+    },
+    {
+      "db": 0,
+      "viajes": 46059,
+      "lat": 40.754,
+      "lon": -73.982,
+      "dist_mediana_km": 1.997,
+      "dur_mediana_min": 10.6,
+      "zona_grid_principal": "Z00 Midtown Oeste/Penn Station",
+      "% viajes": 92.118
+    },
+    {
+      "db": 1,
+      "viajes": 1256,
+      "lat": 40.772,
+      "lon": -73.868,
+      "dist_mediana_km": 9.672,
+      "dur_mediana_min": 27.583,
+      "zona_grid_principal": "Z12 Aeropuerto LaGuardia",
+      "% viajes": 2.512
+    },
+    {
+      "db": 2,
+      "viajes": 1010,
+      "lat": 40.645,
+      "lon": -73.784,
+      "dist_mediana_km": 19.725,
+      "dur_mediana_min": 39.45,
+      "zona_grid_principal": "Z15 Aeropuerto JFK",
+      "% viajes": 2.02
+    },
+    {
+      "db": 3,
+      "viajes": 338,
+      "lat": 40.69,
+      "lon": -73.987,
+      "dist_mediana_km": 3.327,
+      "dur_mediana_min": 13.608,
+      "zona_grid_principal": "Otras",
+      "% viajes": 0.676
+    },
+    {
+      "db": 4,
+      "viajes": 196,
+      "lat": 40.715,
+      "lon": -73.957,
+      "dist_mediana_km": 3.262,
+      "dur_mediana_min": 12.375,
+      "zona_grid_principal": "Otras",
+      "% viajes": 0.392
+    },
+    {
+      "db": 5,
+      "viajes": 74,
+      "lat": 40.752,
+      "lon": -73.941,
+      "dist_mediana_km": 2.813,
+      "dur_mediana_min": 10.558,
+      "zona_grid_principal": "Otras",
+      "% viajes": 0.148
+    },
+    {
+      "db": 6,
+      "viajes": 71,
+      "lat": 40.744,
+      "lon": -73.922,
+      "dist_mediana_km": 4.255,
+      "dur_mediana_min": 14.05,
+      "zona_grid_principal": "Otras",
+      "% viajes": 0.142
+    },
+    {
+      "db": 7,
+      "viajes": 56,
+      "lat": 40.765,
+      "lon": -73.926,
+      "dist_mediana_km": 1.85,
+      "dur_mediana_min": 9.192,
+      "zona_grid_principal": "Otras",
+      "% viajes": 0.112
+    }
+  ],
+  "viajes_eps": 0.182,
+  "viajes_pct_ruido": 1.494,
+  "viajes_n_ruido": 747,
+  "ruido_viajes_tipos": [
+    {
+      "tipo": "extremo en distancia (sobre todo muy corto) con velocidad normal",
+      "viajes": 252,
+      "dist_med": 0.329,
+      "dur_med": 1.85,
+      "vel_med": 9.803,
+      "pct_aeropuerto": 15.873
+    },
+    {
+      "tipo": "lento (posible taxímetro olvidado / trancón extremo)",
+      "viajes": 417,
+      "dist_med": 0.336,
+      "dur_med": 13.75,
+      "vel_med": 2.343,
+      "pct_aeropuerto": 1.679
+    },
+    {
+      "tipo": "rápido (autopista / posible error GPS)",
+      "viajes": 78,
+      "dist_med": 1.369,
+      "dur_med": 1.808,
+      "vel_med": 45.911,
+      "pct_aeropuerto": 10.256
+    }
+  ],
+  "ruido_espacial_dist_med": 3.2853162812486207,
+  "resto_dist_med": 2.104567513292241,
+  "ruido_espacial_top_zonas": {
+    "Otras": 938,
+    "Z15 Aeropuerto JFK": 1,
+    "Z08 Lenox Hill (UES)": 1
+  }
+}

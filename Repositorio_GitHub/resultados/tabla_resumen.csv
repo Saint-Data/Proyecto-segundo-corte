@@ -1,0 +1,18 @@
+Rol,Métrica,Valor
+Rol 1,Entropía zona de recogida (global),3.981 bits (15.8 zonas efectivas de 20)
+Rol 1,Entropía madrugada vs pico PM,3.725 vs 3.987 bits
+Rol 1,"H(destino) → H(destino | origen, franja)",3.947 → 3.581 bits
+Rol 1,Información mutua hora–destino / origen–destino,0.0780 / 0.2796 bits
+Rol 1,KL(laboral‖fin de semana) zonas / horas,0.0378 / 0.1588 bits
+Rol 1,"Entropía cruzada test P(destino) → P(destino|origen,franja)",3.951 → 3.655 bits/viaje
+Rol 1,Jensen: ETA con velocidad media subestima,4.97 min por viaje medio (34.8 %)
+Rol 1,LSE: clasificación laboral/fds por día,95.1 % exactitud; cálculo ingenuo NaN en 105/182 días
+Rol 2,K-means (K=4),silueta 0.491 | DB 0.504 | CH 68827
+Rol 2,Jerárquico Ward (K=4),silueta 0.483 | DB 0.481 | CH 6967
+Rol 2,DBSCAN (ε=490 m),silueta 0.137 | DB 0.502 | CH 11201
+Rol 2,ARI K-means vs Ward / vs DBSCAN,0.822 / 0.155
+Rol 2,DBSCAN hiperparámetros y ruido,"ε = 490 m, min_samples = 50, ruido 1.88 %; viajes atípicos 1.49 %"
+Rol 3,K (BIC) y pesos π,"K = 4; π = [0.3649, 0.1186, 0.18, 0.3365]"
+Rol 3,Mejor corrida EM propio,"aleatoria, 314 iteraciones, loglik/viaje -3.54432 (sklearn -3.54483)"
+Rol 3,Iteraciones medias (aleatoria / K-means++),318 / 297
+Rol 3,Asignación segura (γmax>0.9) / ambigua (γmax<0.6),25.4 % / 27.3 %

@@ -1,0 +1,294 @@
+{
+  "K": 4,
+  "variables": [
+    "log_dist",
+    "log_dur",
+    "hora_desp"
+  ],
+  "hora_corte": 5,
+  "N": 49253,
+  "tol": 1e-06,
+  "bic": {
+    "1": 366019.5,
+    "2": 361066.3,
+    "3": 352651.6,
+    "4": 351141.6,
+    "5": 350305.8,
+    "6": 350459.4,
+    "7": 349838.5,
+    "8": 348853.8,
+    "9": 349176.6,
+    "10": 349457.6
+  },
+  "pi": [
+    0.3649,
+    0.1186,
+    0.18,
+    0.3365
+  ],
+  "mu_estandarizado": [
+    [
+      -0.6155,
+      -0.5525,
+      0.0154
+    ],
+    [
+      0.0054,
+      -0.0483,
+      -1.4925
+    ],
+    [
+      0.4113,
+      0.6059,
+      -0.6956
+    ],
+    [
+      0.4456,
+      0.2921,
+      0.8815
+    ]
+  ],
+  "mu_original": [
+    [
+      0.3318,
+      1.9983,
+      11.806
+    ],
+    [
+      0.854,
+      2.3552,
+      3.1011
+    ],
+    [
+      1.1953,
+      2.8182,
+      7.7019
+    ],
+    [
+      1.2242,
+      2.5961,
+      16.8063
+    ]
+  ],
+  "Sigma_original": [
+    [
+      [
+        0.2635,
+        0.2249,
+        0.0623
+      ],
+      [
+        0.2249,
+        0.407,
+        -0.2772
+      ],
+      [
+        0.0623,
+        -0.2772,
+        21.768
+      ]
+    ],
+    [
+      [
+        0.6913,
+        0.4783,
+        -0.3162
+      ],
+      [
+        0.4783,
+        0.5331,
+        0.1594
+      ],
+      [
+        -0.3162,
+        0.1594,
+        1.9727
+      ]
+    ],
+    [
+      [
+        0.7793,
+        0.4195,
+        0.1615
+      ],
+      [
+        0.4195,
+        0.3499,
+        0.3977
+      ],
+      [
+        0.1615,
+        0.3977,
+        7.097
+      ]
+    ],
+    [
+      [
+        0.6609,
+        0.4153,
+        0.1067
+      ],
+      [
+        0.4153,
+        0.3651,
+        -0.3538
+      ],
+      [
+        0.1067,
+        -0.3538,
+        10.2547
+      ]
+    ]
+  ],
+  "parametros_legibles": [
+    {
+      "index": "P0",
+      "pi_k": 0.365,
+      "dist mediana (km) = exp(mu)": 1.393,
+      "dur mediana (min) = exp(mu)": 7.376,
+      "hora central": 16.806,
+      "sd hora (h)": 4.666,
+      "sd log_dist": 0.513,
+      "sd log_dur": 0.638,
+      "corr(log_dist, log_dur)": 0.687,
+      "vel implícita (km/h)": 11.335
+    },
+    {
+      "index": "P1",
+      "pi_k": 0.119,
+      "dist mediana (km) = exp(mu)": 2.349,
+      "dur mediana (min) = exp(mu)": 10.54,
+      "hora central": 8.101,
+      "sd hora (h)": 1.405,
+      "sd log_dist": 0.831,
+      "sd log_dur": 0.73,
+      "corr(log_dist, log_dur)": 0.788,
+      "vel implícita (km/h)": 13.372
+    },
+    {
+      "index": "P2",
+      "pi_k": 0.18,
+      "dist mediana (km) = exp(mu)": 3.305,
+      "dur mediana (min) = exp(mu)": 16.747,
+      "hora central": 12.702,
+      "sd hora (h)": 2.664,
+      "sd log_dist": 0.883,
+      "sd log_dur": 0.591,
+      "corr(log_dist, log_dur)": 0.803,
+      "vel implícita (km/h)": 11.84
+    },
+    {
+      "index": "P3",
+      "pi_k": 0.336,
+      "dist mediana (km) = exp(mu)": 3.401,
+      "dur mediana (min) = exp(mu)": 13.412,
+      "hora central": 21.806,
+      "sd hora (h)": 3.202,
+      "sd log_dist": 0.813,
+      "sd log_dur": 0.604,
+      "corr(log_dist, log_dur)": 0.846,
+      "vel implícita (km/h)": 15.217
+    }
+  ],
+  "mejor_corrida": {
+    "init": "aleatoria",
+    "seed": 4,
+    "iteraciones": 314,
+    "loglik_viaje": -3.5443238904398924
+  },
+  "sklearn_loglik_viaje": -3.544829323035959,
+  "sklearn_iter": 422,
+  "inicializaciones": [
+    {
+      "init": "aleatoria",
+      "ll_media": -3.54639,
+      "ll_min": -3.55294,
+      "ll_max": -3.54432,
+      "ll_sd": 0.00334,
+      "iter_media": 317.6,
+      "iter_min": 148,
+      "iter_max": 646,
+      "seg_media": 9.2378,
+      "pct_optimo_global": 0.1,
+      "optimos_distintos": 4
+    },
+    {
+      "init": "kmeans++",
+      "ll_media": -3.54718,
+      "ll_min": -3.56496,
+      "ll_max": -3.54432,
+      "ll_sd": 0.00514,
+      "iter_media": 297.2,
+      "iter_min": 131,
+      "iter_max": 624,
+      "seg_media": 8.76727,
+      "pct_optimo_global": 0.05,
+      "optimos_distintos": 5
+    }
+  ],
+  "pct_gamma_mayor_09": 25.37713438775303,
+  "pct_gamma_menor_06": 27.305950906543764,
+  "H_gamma_media": 0.8127428299774491,
+  "perfiles": [
+    {
+      "perfil": "P0",
+      "pi_k": 0.365,
+      "viajes esperados (N_k)": 17972.344,
+      "dist media km": 1.589,
+      "dur media min": 9.015,
+      "vel media km/h": 12.637,
+      "% fin de semana": 29.808,
+      "% aeropuerto (orig o dest)": 0.175,
+      "% madrugada 0-5h": 6.915,
+      "% pico AM 6-9h": 6.95,
+      "% pico PM 16-19h": 30.918,
+      "% noche 20-23h": 18.656,
+      "% en macro-zona aeropuertos (Rol 2 C2/C3)": 0.581
+    },
+    {
+      "perfil": "P1",
+      "pi_k": 0.119,
+      "viajes esperados (N_k)": 5837.162,
+      "dist media km": 3.45,
+      "dur media min": 13.681,
+      "vel media km/h": 15.271,
+      "% fin de semana": 15.078,
+      "% aeropuerto (orig o dest)": 6.066,
+      "% madrugada 0-5h": 7.382,
+      "% pico AM 6-9h": 83.721,
+      "% pico PM 16-19h": 0.0,
+      "% noche 20-23h": 0.0,
+      "% en macro-zona aeropuertos (Rol 2 C2/C3)": 4.563
+    },
+    {
+      "perfil": "P2",
+      "pi_k": 0.18,
+      "viajes esperados (N_k)": 8864.92,
+      "dist media km": 4.895,
+      "dur media min": 19.903,
+      "vel media km/h": 13.672,
+      "% fin de semana": 27.668,
+      "% aeropuerto (orig o dest)": 13.775,
+      "% madrugada 0-5h": 0.486,
+      "% pico AM 6-9h": 15.364,
+      "% pico PM 16-19h": 10.893,
+      "% noche 20-23h": 0.221,
+      "% en macro-zona aeropuertos (Rol 2 C2/C3)": 9.932
+    },
+    {
+      "perfil": "P3",
+      "pi_k": 0.336,
+      "viajes esperados (N_k)": 16578.574,
+      "dist media km": 4.724,
+      "dur media min": 16.025,
+      "vel media km/h": 16.782,
+      "% fin de semana": 31.956,
+      "% aeropuerto (orig o dest)": 7.674,
+      "% madrugada 0-5h": 25.396,
+      "% pico AM 6-9h": 0.012,
+      "% pico PM 16-19h": 26.339,
+      "% noche 20-23h": 44.801,
+      "% en macro-zona aeropuertos (Rol 2 C2/C3)": 8.039
+    }
+  ]
+}
