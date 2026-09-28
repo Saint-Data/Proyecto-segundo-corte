@@ -8,10 +8,10 @@ Consultoría analítica para **UrbanMove** sobre el dataset [NYC Taxi Trip Durat
 
 | Integrante | Código | Rol | Notebook |
 |---|---|---|---|
-| [Nombre 1] | [código] | Rol 1 — Analista de Incertidumbre e Información | `Rol1_Incertidumbre_Informacion.ipynb` |
-| [Nombre 2] | [código] | Rol 2 — Arquitecto de Segmentación por Partición | `Rol2_Segmentacion_Particion.ipynb` |
-| [Nombre 3] | [código] | Rol 3 — Modelador de Mezclas y Variables Latentes | `Rol3_Mezclas_Variables_Latentes.ipynb` |
-| [Nombre 4] | [código] | Rol 4 — Estratega de Negocio y Selección de Datos | `Rol4_Negocio_Seleccion_Datos.ipynb` |
+| Rafael José Correa Redondo | [código] | Rol 1 — Analista de Incertidumbre e Información | `Rol1_Incertidumbre_Informacion.ipynb` |
+| Santiago Garzón Galvis | [código] | Rol 2 — Arquitecto de Segmentación por Partición | `Rol2_Segmentacion_Particion.ipynb` |
+| Nicolás David Cañón | [código] | Rol 3 — Modelador de Mezclas y Variables Latentes | `Rol3_Mezclas_Variables_Latentes.ipynb` |
+| Gabriel Pulido| [código] | Rol 4 — Estratega de Negocio y Selección de Datos | `Rol4_Negocio_Seleccion_Datos.ipynb` |
 
 ## Estructura
 
